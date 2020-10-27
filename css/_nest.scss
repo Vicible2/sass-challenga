@@ -1,3 +1,13 @@
+$padding: 16px;
+
+
+@mixin boxshadow {
+    -webkit-box-shadow: 10px 10px 19px -4px rgba(255, 255, 255, 0.75);
+        -moz-box-shadow: 10px 10px 19px -4px rgba(255, 255, 255, 0.75);
+        box-shadow: 10px 10px 19px -4px rgba(255, 255, 255, 0.75);
+}
+
+
 body {
     font: 100% "Space Mono", monospace;
     color: #2748b3;
@@ -16,11 +26,7 @@ body {
     background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
     background-attachment: fixed;
 }
-@mixin boxshadow {
-    -webkit-box-shadow: 10px 10px 19px -4px rgba(255, 255, 255, 0.75);
-        -moz-box-shadow: 10px 10px 19px -4px rgba(255, 255, 255, 0.75);
-        box-shadow: 10px 10px 19px -4px rgba(255, 255, 255, 0.75);
-}
+
 article {
     display: flex;
     flex-wrap: wrap;
@@ -37,7 +43,7 @@ article {
     h6 {
         text-align: center;
         font-size: 2em;
-        padding: 32px;
+        padding: calc(2 * $padding);
         margin-bottom: 0px;
         color: #6b8eff;
     }
@@ -52,7 +58,7 @@ article {
         margin-bottom: 1.6em;
         max-width: 100%;
         overflow: auto;
-        padding: 16px;
+        padding: $padding;
         display: block;
         white-space: pre-wrap;
     }
@@ -72,7 +78,7 @@ article {
         flex-basis: 45%;
         border: 1px silver solid;
         @include boxshadow;
-        padding: 16px;
+        padding: $padding;
         margin: 16px;
         clear: both;
         overflow: auto;
@@ -91,7 +97,7 @@ article {
   .error,
   .warning {
     border: 1px solid #ccc;
-    padding: 16px;
+    padding: $padding;
     margin: 16px;
     color: #2748b3;
     background-color: #000;
