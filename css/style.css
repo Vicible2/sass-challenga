@@ -10,6 +10,10 @@ body {
   background-attachment: fixed;
 }
 
+.button {
+  text-align: center;
+}
+
 article {
   display: -webkit-box;
   display: -ms-flexbox;
