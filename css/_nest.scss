@@ -43,7 +43,7 @@ article {
     h6 {
         text-align: center;
         font-size: 2em;
-        padding: calc(2 * $padding);
+        padding: $padding *2;
         margin-bottom: 0px;
         color: #6b8eff;
     }
