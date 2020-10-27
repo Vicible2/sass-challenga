@@ -85,10 +85,7 @@ article section #selling-points {
       flex-basis: 100%;
 }
 
-.message,
-.success,
-.error,
-.warning {
+.message, .success, .error, .warning {
   border: 1px solid #ccc;
   padding: 16px;
   margin: 16px;

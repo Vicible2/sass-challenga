@@ -92,10 +92,7 @@ article {
 
 
 }
-.message,
-  .success,
-  .error,
-  .warning {
+ .message {
     border: 1px solid #ccc;
     padding: $padding;
     margin: 16px;
@@ -104,13 +101,16 @@ article {
   }
   
   .success {
+      @extend .message;
     background-color: green;
   }
   
   .error {
+    @extend .message;
     background-color: red;
   }
   
   .warning {
+    @extend .message;
     background-color: orange;
   }
