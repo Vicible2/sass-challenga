@@ -1,6 +1,6 @@
 body {
   font: 100% "Space Mono", monospace;
-  color: blue;
+  color: red;
   margin: 0px;
   padding: 0px;
   background-color: #000;
@@ -108,4 +108,4 @@ article section #selling-points {
 .warning {
   background-color: orange;
 }
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style_red.css.map */
